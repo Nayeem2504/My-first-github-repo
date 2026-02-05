@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Ro!nMart – T-Shirt Marketplace</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background:#f6f6f6;
+}
+
+/* HEADER */
+header{
+  background:#5f172f;
+  color:#fff;
+  padding:15px 40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+header h1{
+  font-size:26px;
+}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* HERO */
+.hero{
+  background:white;
+  padding:60px 40px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.hero-text{
+  width:50%;
+}
+
+.hero-text h2{
+  font-size:42px;
+  margin-bottom:15px;
+}
+
+.hero-text p{
+  font-size:18px;
+  color:#555;
+  margin-bottom:25px;
+}
+
+.search-box{
+  display:flex;
+}
+
+.search-box input{
+  padding:12px;
+  width:300px;
+  border:1px solid #ccc;
+  border-radius:5px 0 0 5px;
+}
+
+.search-box button{
+  padding:12px 20px;
+  background:#701936;
+  color:white;
+  border:none;
+  border-radius:0 5px 5px 0;
+  cursor:pointer;
+}
+
+.hero img{
+  width:350px;
+}
+
+/* CATEGORIES */
+.categories{
+  padding:40px;
+}
+
+.categories h3{
+  font-size:28px;
+  margin-bottom:20px;
+}
+
+.category-list{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.category{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* VENDORS */
+.vendors{
+  padding:40px;
+}
+
+.vendor-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.vendor-card{
+  background:white;
+  padding:20px;
+  border-radius:10px;
+  box-shadow:0 5px 10px rgba(0,0,0,0.1);
+}
+
+.vendor-card img{
+  width:100%;
+  border-radius:8px;
+}
+
+.vendor-card h4{
+  margin:10px 0;
+}
+
+.vendor-card button{
+  background:#681531;
+  color:white;
+  padding:8px 15px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* PROCESS */
+.process{
+  background:white;
+  padding:50px 40px;
+}
+
+.process h3{
+  font-size:28px;
+  margin-bottom:30px;
+}
+
+.steps{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+.step{
+  background:#f9f9f9;
+  padding:25px;
+  border-radius:10px;
+  text-align:center;
+}
+
+/* WHY US */
+.why{
+  padding:40px;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.why-card{
+  background:white;
+  padding:25px;
+  border-radius:10px;
+}
+
+/* CTA */
+.cta{
+  background:#68132f;
+  color:white;
+  padding:50px;
+  text-align:center;
+}
+
+.cta button{
+  margin-top:20px;
+  padding:12px 25px;
+  background:white;
+  color:#65102c;
+  border:none;
+  border-radius:5px;
+  font-size:16px;
+  cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+  background:#333;
+  color:white;
+  text-align:center;
+  padding:15px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ro!nMart</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Vendors</a>
+    <a href="#">Fabrics</a>
+    <a href="#">Login</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="hero-text">
+    <h2>Order T-Shirts From Trusted Vendors</h2>
+    <p>Compare fabric, GSM, price & quality before ordering.</p>
+
+    <div class="search-box">
+      <input type="text" placeholder="Search vendor or fabric">
+      <button>Search</button>
+    </div>
+  </div>
+  <img src="https://i.ibb.co/YB9yZPq/tshirt.png">
+</section>
+
+<section class="categories">
+  <h3>Popular Categories</h3>
+  <div class="category-list">
+    <div class="category">👕 Round Neck</div>
+    <div class="category">👔 Polo T-Shirt</div>
+    <div class="category">🧢 Corporate T-Shirt</div>
+    <div class="category">🎨 Custom Print</div>
+  </div>
+</section>
+
+<section class="vendors">
+  <h3>Top Vendors</h3>
+  <div class="vendor-grid">
+    <div class="vendor-card">
+      <img src="https://i.ibb.co/3hWQK0y/fabric1.jpg">
+      <h4>Roin Apparel</h4>
+      <p>GSM 180 | Cotton</p>
+      <button>View</button>
+    </div>
+    <div class="vendor-card">
+      <img src="https://i.ibb.co/jzq6V5y/fabric2.jpg">
+      <h4>Urban Wear</h4>
+      <p>GSM 200 | Premium</p>
+      <button>View</button>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <h3>How It Works</h3>
+  <div class="steps">
+    <div class="step">🔍 Browse Vendors</div>
+    <div class="step">🧵 Check Fabric Samples</div>
+    <div class="step">🛒 Place Order</div>
+    <div class="step">🚚 Get Delivery</div>
+  </div>
+</section>
+
+<section class="why">
+  <h3>Why Choose TeeMart?</h3>
+  <div class="why-grid">
+    <div class="why-card">✔ Verified Vendors</div>
+    <div class="why-card">✔ Fabric Transparency</div>
+    <div class="why-card">✔ Best Price Comparison</div>
+  </div>
+</section>
+
+<section class="cta">
+  <h2>Start Your T-Shirt Business Today</h2>
+  <button>Join as Vendor</button>
+</section>
+
+<footer>
+  © 2026 Ro!nMart | All Rights Reserved
+</footer>
+
+</body>
+</html>
